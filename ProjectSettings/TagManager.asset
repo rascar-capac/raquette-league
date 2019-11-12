@@ -18,8 +18,8 @@ TagManager:
   - Explosion
   - Projectile
   - Ground
-  - 
-  - 
+  - CollectibleBomb
+  - Wall
   - 
   - 
   - 

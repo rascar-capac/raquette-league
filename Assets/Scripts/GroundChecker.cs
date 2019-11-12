@@ -6,10 +6,12 @@ public class GroundChecker : MonoBehaviour
 {
     private Rigidbody parentRigidbody;
     private int triggerCount;
+    private bool isFalling;
 
     private void Awake()
     {
         triggerCount = 0;
+        isFalling = false;
     }
 
     private void Start()
@@ -19,21 +21,30 @@ public class GroundChecker : MonoBehaviour
 
     private void Update()
     {
-        if(triggerCount <= 0)
+        if(triggerCount <= 0 && !isFalling)
         {
             parentRigidbody.useGravity = true;
             parentRigidbody.constraints = RigidbodyConstraints.None;
+            parentRigidbody.velocity = new Vector3(parentRigidbody.velocity.x * 0.5f, -3, parentRigidbody.velocity.z * 0.5f);
+            parentRigidbody.drag = 0;
             GetComponentInParent<FP_ForceToPosition>().Enable(false);
+            isFalling = true;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        triggerCount++;
+        if(other.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            triggerCount++;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        triggerCount--;
+        if(other.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            triggerCount--;
+        }
     }
 }
