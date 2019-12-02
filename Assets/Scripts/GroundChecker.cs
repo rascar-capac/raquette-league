@@ -28,6 +28,10 @@ public class GroundChecker : MonoBehaviour
             parentRigidbody.velocity = new Vector3(parentRigidbody.velocity.x * 0.5f, -3, parentRigidbody.velocity.z * 0.5f);
             parentRigidbody.drag = 0;
             GetComponentInParent<FP_ForceToPosition>().Enable(false);
+            Transform canon = transform.parent.Find("Shooter").GetChild(0);
+            canon.parent = null;
+            canon.GetComponent<Rigidbody>().velocity = parentRigidbody.velocity;
+            canon.GetComponent<Rigidbody>().isKinematic = false;
             isFalling = true;
         }
     }

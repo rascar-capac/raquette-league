@@ -30,6 +30,7 @@ public class FP_Area : FP_Main
 
 	private void OnTriggerEnter(Collider other)
 	{
+
 		if(_enable && _layer == (_layer | (1 << other.gameObject.layer)))
 		{
 			OnEnter.Invoke();

@@ -46,7 +46,7 @@ MonoBehaviour:
   _enable: 1
   _objectToSpawn: {fileID: 2433992316764116692, guid: cd15227599f7f624c8f92b13c47131d9,
     type: 3}
-  _spawnDelay: 0.5
+  _spawnDelay: 2
   _useRandom: 0
   _minMaxRandom: {x: 0, y: 1}
   _destroyDelay: 0
@@ -56,4 +56,6 @@ MonoBehaviour:
   OnSpawn:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   _localSpawnVelocity: {x: 0, y: 0, z: 15}

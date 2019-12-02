@@ -246,12 +246,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   OnStay:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   OnExit:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   _destroyOnHit: 0
   _destroyCollidedObjectOnHit: 0
   _layer:
@@ -271,7 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enable: 0
   _initialDelay: 0
-  _delay: 3
+  _delay: 1
   _repeatNumber: 9999
   OnRepeat:
     m_PersistentCalls:
@@ -287,17 +293,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &4749146819428970519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,7 +310,7 @@ MonoBehaviour:
   _enable: 1
   _objectToSpawn: {fileID: 7050837252660719988, guid: e2302639dd12fcf4d9b7e0f87e7e6993,
     type: 3}
-  _spawnDelay: 1
+  _spawnDelay: 0
   _useRandom: 0
   _minMaxRandom: {x: 0, y: 1}
   _destroyDelay: 0
@@ -322,18 +319,9 @@ MonoBehaviour:
   _parent: {fileID: 0}
   OnSpawn:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   _localSpawnVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &302322704748200423
 MonoBehaviour:
@@ -351,12 +339,18 @@ MonoBehaviour:
   OnEnter:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   OnStay:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   OnExit:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   _destroyOnHit: 1
   _destroyCollidedObjectOnHit: 1
   _layer:
